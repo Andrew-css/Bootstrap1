@@ -41,7 +41,7 @@ function volver (){
           <h1 class="text-uppercase display-5 fw-bold text-light">
             Get free beer and cocktails <br />
             <p class="m-2">$30</p>
-            <button type="button" class="btn btn-dark text-uppercase px-5 bg-primary fw-bold" @click="volver()">
+            <button type="button" class="btn btn-dark text-uppercase px-5 bg-primary fw-bold " @click="volver()">
               regresar
             </button>
           </h1>
@@ -96,4 +96,39 @@ hr {
   opacity: 1;
   width: 100px;
 }
+
+@media screen and (min-width: 501px) and (max-width: 1500px) {
+  .text-center{
+  height: 100vh;
+  }
+  
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px){
+  .text-light{
+  font-size: 0.9rem;
+  }
+  
+  .text-center{
+  height: 100vh;
+  }
+
+  .border{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 10px;
+  }
+
+  .btn{
+  width: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+}
+
 </style>
