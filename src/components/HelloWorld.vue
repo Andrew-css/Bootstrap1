@@ -14,8 +14,12 @@ function sum() {
 }
 
 
-function goToPrueba() {
-  router.push(`/prueba`);
+function goToEjemplo1() {
+  router.push(`/ejemplo1`);
+}
+
+function goToEjemplo2() {
+  router.push(`/ejemplo2`);
 }
 
 function borrar() {
@@ -102,7 +106,7 @@ console.log(contador)
         </div>
       </div>
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="botones">
         <div class="col-2">
           <button type="button" class="btn btn-primary m-3" @click="sum()">
             Contador : {{ contador }}
@@ -116,6 +120,14 @@ console.log(contador)
             <option value="2">Dos</option>
             <option value="3">Tres</option>
           </select>
+        </div>
+
+
+
+        <div class="col-2">
+          <button type="button" class="btn btn-dark m-3" @click="goToEjemplo1()">
+            Ver ejemplo 1
+          </button>
         </div>
 
         <!-- Modal -->
@@ -144,14 +156,14 @@ console.log(contador)
           </div>
         </div>
 
+      </div>
+
+      <div class="row justify-content-center" id="botones">
         <div class="col-2">
-          <button type="button" class="btn btn-dark m-3" @click="goToPrueba()">
-           Ver ejemplo 1
+          <button type="button" class="btn btn-warning m-3 text-light fw-bold" @click="goToEjemplo2()">
+            Ver ejemplo 2
           </button>
         </div>
-
-
-
 
 
       </div>
@@ -160,4 +172,13 @@ console.log(contador)
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media screen and (min-width: 200px) and (max-width:768px) {
+  #botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+}
+</style>
