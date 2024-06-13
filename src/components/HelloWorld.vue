@@ -160,7 +160,7 @@ console.log(contador)
 
       <div class="row justify-content-center" id="botones">
         <div class="col-2">
-          <button type="button" class="btn btn-warning m-3 text-light fw-bold" @click="goToEjemplo2()">
+          <button type="button" class="btn btn-warning m-3 fw-bold" @click="goToEjemplo2()">
             Ver ejemplo 2
           </button>
         </div>
