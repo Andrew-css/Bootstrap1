@@ -146,7 +146,7 @@ console.log(contador)
 
         <div class="col-2">
           <button type="button" class="btn btn-dark m-3" @click="goToPrueba()">
-            Siguiente
+           Ver ejemplo 1
           </button>
         </div>
 
