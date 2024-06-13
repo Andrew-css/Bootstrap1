@@ -63,7 +63,7 @@ function volver (){
   background-repeat:no-repeat;
   background-position: right;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   font-family: 'Monserrat', sans-serif;
 
 }
@@ -99,7 +99,7 @@ hr {
 
 @media screen and (min-width: 501px) and (max-width: 1500px) {
   .text-center{
-  height: 100vh;
+  height: 100%;
   }
   
 }
