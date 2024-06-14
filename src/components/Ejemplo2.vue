@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router';
 
 let router = useRouter();
 
+
 function volver() {
     router.push('/')
 }
@@ -35,7 +36,7 @@ function volver() {
 
         <!-- Home -->
 
-        <section class="bg-primary d-flex " style="height: 70vh;">
+        <section class="bg-primary d-flex " style="height: 70vh;" id="home">
             <div class="col-7 row align-items-center">
                 <div class="">
                     <h1 class="display-3 text-light text-start" style="margin-left: 100px;">
@@ -43,7 +44,8 @@ function volver() {
                         Langing Page for <br />
                         <span class="fw-bold">Business</span>
                     </h1>
-                    <p class="text-light fs-5" style="width: 60%;text-align: start; margin-left: 100px;;">Lorem ipsum dolor,
+                    <p class="text-light fs-5" style="width: 60%;text-align: start; margin-left: 100px;;">Lorem ipsum
+                        dolor,
                         sit
                         amet consectetur adipisicing elit. Repellendus architecto eius praesentium modi
                         dolor ea?
@@ -88,9 +90,9 @@ function volver() {
 
         <!-- Features -->
 
-        <section>
-            <div class="">
-                <div class="mt-4 row justify-content-center" style="width: 100%;">
+        <section >
+            <div class="" id="features">
+                <div class="mt-5 row justify-content-center" style="width: 100%;">
                     <h2 class=" text-center fw-light pb-3 text-capitalize">the features that <span class="fw-bold">we
                             present</span></h2>
                     <p class="" style="width: 50%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -106,7 +108,8 @@ function volver() {
                         <div>
                             <h5 class="fw-bold text-start">Website Performance</h5>
                             <p class="text-muted text-start">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam. Sunt ab
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam. Sunt
+                                ab
                                 voluptatibus neque soluta impedit autem?
                             </p>
                         </div>
@@ -116,7 +119,8 @@ function volver() {
                         <div>
                             <h5 class="fw-bold text-start">Marketing Performance</h5>
                             <p class="text-muted text-start">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam. Sunt ab
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam. Sunt
+                                ab
                                 voluptatibus neque soluta impedit autem?
                             </p>
                         </div>
@@ -126,7 +130,8 @@ function volver() {
                         <div>
                             <h5 class="fw-bold text-start">SEP Performance</h5>
                             <p class="text-muted text-start">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam. Sunt ab
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam. Sunt
+                                ab
                                 voluptatibus neque soluta impedit autem?
                             </p>
                         </div>
@@ -141,28 +146,103 @@ function volver() {
 
         </section>
 
-         <!-- Stadistics -->
+        <!-- Stadistics -->
 
-         <section class="row py-5 bg-dark" style="width: 99.7vw;">
-            <div class="col-md-3 text-center">
-                <h2 class="text-light fw-bold display-2">328</h2>
+        <section class="d-flex py-5 bg-dark justify-content-center">
+            <div class="col-2 text-center m-2">
+                <h2 class="text-light fw-bold display-2">228</h2>
                 <p class="text-capitalize text-light">happy customers</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-2 text-center m-2">
                 <h2 class="text-light fw-bold display-2">285</h2>
                 <p class="text-capitalize text-light">Issues Solved</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-2 text-center m-2">
                 <h2 class="text-light fw-bold display-2">159</h2>
                 <p class="text-capitalize text-light">Good Reviews</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-2 text-center m-2">
                 <h2 class="text-light fw-bold display-2">128</h2>
                 <p class="text-capitalize text-light">Case Studies</p>
             </div>
+        </section>
 
+        <!-- Services -->
 
-         </section>
+        <section class="bg-primary py-5" id="services">
+            <div class="row justify-content-center" style="width: 100%;">
+                <h2 class="text-center fw-light pb-3 text-capitalize text-light">the services that <span
+                        class="fw-bold text-light">we
+                        introduce</span></h2>
+                <p class="text-light" style="width: 50%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                    vitae
+                    numquam aperiam explicabo tempora maxime repellat esse aliquam sequi voluptate, itaque fugiat, quasi
+                    eligendi pariatur dolores non distinctio, aspernatur natus.</p>
+            </div>
+
+            <!-- Cards -->
+
+            <div class="row py-5 text-center justify-content-center " style="width: 100%; ">
+
+                <div class="col-4 card m-5" style="width: 20rem;">
+                    <div class="card-body">
+                        <span class="fa-stack mb-4">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-user fa-stack-1x text-white"></i>
+                        </span>
+                        <p class="text-capitalize fw-bold fs-5">website perfomance</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+                            repellendus dolor minima? Consectetur, dolores.</p>
+                        <a href="#" class="btn btn-link text-primary text-decoration-none">Read More <i
+                                class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card m-5" style="width: 20rem;">
+                    <div class="card-body">
+                        <span class="fa-stack mb-4">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-arrow-trend-up fa-stack-1x text-white"></i>
+                        </span>
+                        <p class="text-capitalize fw-bold fs-5">marketing perfomance</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+                            repellendus dolor minima? Consectetur, dolores.</p>
+                        <a href="#" class="btn btn-link text-primary text-decoration-none">Read More <i
+                                class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card m-5" style="width: 20rem;" id="card">
+                    <div class="card-body">
+                        <span class="fa-stack mb-4">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-rocket fa-stack-1x text-white"></i>
+                        </span>
+                        <p class="text-capitalize fw-bold fs-5">SEO perfomance</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+                            repellendus dolor minima? Consectetur, dolores.</p>
+                        <a href="#" class="btn btn-link text-primary text-decoration-none">Read More <i
+                                class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ultima parte -->
+
+        <section class="d-flex bg-primary py-3">
+            <div class="col-4 text-center">
+                <p class="text-capitalize text-light fs-5">Corporate</p>
+            </div>
+
+            <div class="col-6 text-end">
+                <p class="text-capitalize text-light fs-5">Copyright © Corporate 2023</p>
+            </div>
+
+        </section>
 
     </div>
 </template>
@@ -171,6 +251,8 @@ function volver() {
 .form-control {
     flex: none;
     width: 89%;
-
 }
+
+
+
 </style>
