@@ -22,8 +22,8 @@ function volver() {
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ">
+                    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                        <div class="navbar-nav grid justify-content-end" style="width: 100%; margin-right: 1%;">
                             <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                             <a class="nav-link text-light" href="#">Features</a>
                             <a class="nav-link text-light" href="#">Services</a>
@@ -33,7 +33,7 @@ function volver() {
             </nav>
         </header>
 
-        <!-- Primera parte -->
+        <!-- Home -->
 
         <section class="bg-primary d-flex " style="height: 70vh;">
             <div class="col-7 row align-items-center">
@@ -54,32 +54,32 @@ function volver() {
             </div>
             <div class="col-4 bg-light mt-5" style="height: 80%; width: 40%; border-radius: 10px;">
                 <p class="fw-bold fs-5 mt-3">Get 30 day FREE trial</p>
-                <div >
-                    <p class="text-capitalize">First name</p>
+                <div class="text-capitalize text-start lh-1 mt-4" style="margin-left: 10%;">
+                    <p>first name</p>
                     <div class="input-group mb-">
                         <input type="text" class="form-control" aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-default">
                     </div>
                 </div>
 
-                <div>
-                    <p>Last name</p>
-                    <div class="input-group mb-">
+                <div class="text-capitalize text-start lh-1 mt-3" style="margin-left: 10%;">
+                    <p>last name</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+
+                <div class="text-capitalize text-start lh-1 mt-3" style="margin-left: 10%;">
+                    <p>email</p>
+                    <div class="input-group mb-3">
                         <input type="text" class="form-control" aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-default">
                     </div>
                 </div>
 
                 <div>
-                    <p>Email</p>
-                    <div class="input-group mb-">
-                        <input type="text" class="form-control" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
-                    </div>
-                </div>
-
-                <div>
-                    <button type="button" class="bg-dark text-light">Enviar</button>
+                    <input type="submit" class="btn btn-dark" style="width: 80%;">
                 </div>
 
             </div>
@@ -132,16 +132,45 @@ function volver() {
                         </div>
                     </div>
 
-                    
+
                 </div>
                 <div class="col-md-5">
-                        <img src="../assets/features.jpg" alt="" class="img-fluid">
-                    </div>
+                    <img src="../assets/features.jpg" alt="" class="img-fluid">
+                </div>
             </div>
 
         </section>
 
+         <!-- Stadistics -->
+
+         <section class="row py-5 bg-dark" style="width: 99.7vw;">
+            <div class="col-md-3 text-center">
+                <h2 class="text-light fw-bold display-2">328</h2>
+                <p class="text-capitalize text-light">happy customers</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h2 class="text-light fw-bold display-2">285</h2>
+                <p class="text-capitalize text-light">Issues Solved</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h2 class="text-light fw-bold display-2">159</h2>
+                <p class="text-capitalize text-light">Good Reviews</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h2 class="text-light fw-bold display-2">128</h2>
+                <p class="text-capitalize text-light">Case Studies</p>
+            </div>
+
+
+         </section>
+
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.form-control {
+    flex: none;
+    width: 89%;
+
+}
+</style>
