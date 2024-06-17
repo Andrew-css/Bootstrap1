@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router';
 
 let router = useRouter();
 let contador = ref(0);
+let filter = ref("")
 
 
 
@@ -22,6 +23,10 @@ function goToEjemplo2() {
   router.push(`/ejemplo2`);
 }
 
+function goToEjemplo3() {
+  router.push(`/ejemplo3`);
+}
+
 function borrar() {
   alerta.value = ""
 }
@@ -31,7 +36,7 @@ console.log(contador)
 </script>
 
 <template>
-  <div class="text-center">
+  <div class="text-center" :filter="filter">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Bootstrap</a>
@@ -68,7 +73,7 @@ console.log(contador)
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" v-model="filter" type="search" placeholder="Search" aria-label="Search" >
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
@@ -80,6 +85,8 @@ console.log(contador)
         Hello World
       </div>
       <div class="m-4 bg-danger p-2 text-light fw-bold">I'm here</div>
+
+      
 
       <div class="container text-center">
         <div class="row justify-content-center">
@@ -125,7 +132,7 @@ console.log(contador)
 
 
         <div class="col-2">
-          <button type="button" class="btn btn-dark m-3" @click="goToEjemplo1()">
+          <button type="button" class="btn btn-dark m-3 fw-bold" @click="goToEjemplo1()">
             Ver ejemplo 1
           </button>
         </div>
@@ -133,7 +140,7 @@ console.log(contador)
         <!-- Modal -->
         <div class="col-2 m-3">
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn btn-secondary fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Abrir modal
           </button>
 
@@ -162,6 +169,12 @@ console.log(contador)
         <div class="col-2">
           <button type="button" class="btn btn-warning m-3 fw-bold" @click="goToEjemplo2()">
             Ver ejemplo 2
+          </button>
+        </div>
+
+        <div class="col-2">
+          <button type="button" class="btn btn-danger m-3 fw-bold" @click="goToEjemplo3()">
+            Ver ejemplo 3
           </button>
         </div>
 
