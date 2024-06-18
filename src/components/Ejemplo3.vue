@@ -31,6 +31,10 @@ function openModal(image) {
     image.visible = true;
 }
 
+function closeModal(image) {
+    image.visible = false;
+}
+
 
 
 function volver() {
@@ -50,6 +54,7 @@ function volver() {
         tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
+                <button type="button" class="btn-close m-4 fs-5" style="position: absolute;" data-bs-dismiss="modal" aria-label="Cerrar" @click="closeModal(image)"></button>
                 <img :src="image.src" :alt="image.alt" />
             </div>
         </div>

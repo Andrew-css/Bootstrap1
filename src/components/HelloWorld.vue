@@ -133,7 +133,7 @@ console.log(contador)
 
         <div class="col-2">
           <button type="button" class="btn btn-dark m-3 fw-bold" @click="goToEjemplo1()">
-            Ver ejemplo 1
+            Ver ejercicio 1
           </button>
         </div>
 
@@ -168,13 +168,13 @@ console.log(contador)
       <div class="row justify-content-center" id="botones">
         <div class="col-2">
           <button type="button" class="btn btn-warning m-3 fw-bold" @click="goToEjemplo2()">
-            Ver ejemplo 2
+            Ver ejercicio 2
           </button>
         </div>
 
         <div class="col-2">
           <button type="button" class="btn btn-danger m-3 fw-bold" @click="goToEjemplo3()">
-            Ver ejemplo 3
+            Ver ejercicio 3
           </button>
         </div>
 
